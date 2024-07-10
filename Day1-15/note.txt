@@ -1,0 +1,59 @@
+loop
+////////
+for loop
+  for item in list_of_items
+
+Range
+    for two number in rage(a,b)
+     eg
+     for number in range(6) it means loop six time 
+
+
+ While loop
+ /////////////
+ while someting true
+    do something
+
+two ways of while loop   
+    while something != true
+or  While not someting
+
+
+//*****
+from replit import clear
+this help to clear the terminal everytime when you run
+
+
+**lambda
+example
+def add_number(x,y)
+    return x+y
+print(add_number(5,6))
+ the same
+ 
+add_number= lambda x,y:x+y
+print(add_number(5,6))
+
+
+
+**unpacking keyword arguments
+def multiple(*args)
+    print(args)
+multiple(1,2,3)
+
+
+**** if it dictionaly we can use **variable 
+def add(x,y):
+    return x+y
+nums={"x":3,"y":5}
+print(add(**nums))
+
+
+
+## Object Oriented Programming (OOP)
+////////////////////////////////
+
+
+
+**///import
+example from ..python import * means import all function and class from python file

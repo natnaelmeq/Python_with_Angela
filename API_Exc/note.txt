@@ -1,0 +1,5 @@
+abs-- it means absoult 
+
+list=[1,2,3] can modify the element
+tuple=(1,2,3,) can not modify the inside element
+set{1,2,3}= can not duplicate in the list
