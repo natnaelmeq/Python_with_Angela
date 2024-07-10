@@ -7,7 +7,3 @@
 # print("each person has to pay :", each)
 
 
-def my_testfunction():
-    print("hellow")
-    print("my awsone code")
-my_testfunction()
