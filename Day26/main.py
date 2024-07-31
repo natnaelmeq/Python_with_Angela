@@ -1,6 +1,4 @@
-
-
-                #List comprehension
+# List comprehension
 # numbers = [1,1,2,3,5,8,13,21,34,55]
 # squared_number = [num*num for num in numbers]
 # print(squared_number)
@@ -19,22 +17,20 @@
 # common_number = [int(num)  for num in list1 if num in list2]
 # print(common_number)
 
-        #Dictionary Comprehension
+# Dictionary Comprehension
 # import random
 # names = ["nati","anem","kidus","yafet"]
 # score = {na:random.randint(90,100) for na in names}
 # 5}
 # print(score)
 
-        #Example 1
+# Example 1
 import random
 
-
-
-                # sentence = input("Please put you sentence:")
+# sentence = input("Please put you sentence:")
 # new_list_words = {words:len(words) for words in sentence.split()}
 # print(new_list_words)
-        #Example 2
+# Example 2
 
 # weather_c = eval(input("Put number in celices:"))
 # weather_f = {day:temp *9/5 +32 for (day,temp) in weather_c.items()}
@@ -47,9 +43,21 @@ from pandas import Index
 neto_alphabet = pandas.read_csv("nato_phonetic_alphabet.csv")
 # print(neto_alphabet.to_dict())
 
-phonetic_dict = {row.letter: row.code for (index,row) in neto_alphabet.iterrows()}
-print(phonetic_dict)
+phonetic_dict = {row.letter: row.code for (index, row) in neto_alphabet.iterrows()}
 
-new_name = input("Enter a Word: ").upper()
-out_put = [phonetic_dict[letter] for letter in new_name]
-print(out_put)
+
+# print(phonetic_dict)
+
+def print_name():
+    new_name = input("Enter a Word: ").upper()
+    try:
+        out_put = [phonetic_dict[letter] for letter in new_name]
+
+    except KeyError:
+        print("only letters please")
+        print_name()
+    else:
+        print(out_put)
+
+print_name()
+
