@@ -11,7 +11,7 @@ class CarManager:
 
         self.all_cars = []
         self.car_creation_counter = 0
-        self.move_speed = 0.1
+        self.move_speed = 0.01
 
     def create_car(self):
         random_chance = random.randint(1, 6)
